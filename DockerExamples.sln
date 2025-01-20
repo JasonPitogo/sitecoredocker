@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30002.166
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DockerExamples.Website", "src\DockerExamples.Website\DockerExamples.Website.csproj", "{B062D0AC-C7AB-448A-AB55-0791E7AC974A}"
 EndProject
@@ -14,6 +14,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".app", ".app", "{D9AF16A6-F9A5-4E42-A37B-A440E8CEACC5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.XConnect.Demo", "src\App.XConnect.Demo\App.XConnect.Demo.csproj", "{2FF4ECD0-C43F-4BE2-A261-C386EFFD335E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DockerExamples.Serialization", "src\DockerExamples.Serialization\DockerExamples.Serialization.csproj", "{F3199176-349E-4382-898D-EA7946640284}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,10 @@ Global
 		{2FF4ECD0-C43F-4BE2-A261-C386EFFD335E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2FF4ECD0-C43F-4BE2-A261-C386EFFD335E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2FF4ECD0-C43F-4BE2-A261-C386EFFD335E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3199176-349E-4382-898D-EA7946640284}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3199176-349E-4382-898D-EA7946640284}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3199176-349E-4382-898D-EA7946640284}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3199176-349E-4382-898D-EA7946640284}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

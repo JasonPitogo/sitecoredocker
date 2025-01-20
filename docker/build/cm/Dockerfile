@@ -5,11 +5,13 @@ ARG SXA_IMAGE
 ARG SPE_IMAGE
 ARG TOOLING_IMAGE
 ARG SOLUTION_IMAGE
+ARG MANAGEMENT_SERVICES_IMAGE=https://scr.sitecore.com/sxp/modules/sitecore-management-services-xp1-assets:5.2.113-ltsc2022
 
 FROM ${SOLUTION_IMAGE} as solution
 FROM ${TOOLING_IMAGE} as tooling
 FROM ${SPE_IMAGE} as spe
 FROM ${SXA_IMAGE} as sxa
+FROM ${MANAGEMENT_SERVICES_IMAGE} as mgtservice
 FROM ${BASE_IMAGE}
 
 
@@ -29,6 +31,8 @@ COPY --from=sxa \module\tools \module\tools
 RUN C:\module\tools\Initialize-Content.ps1 -TargetPath .\; `
     Remove-Item -Path C:\module -Recurse -Force;
     
+COPY --from=mgtservice C:\module\cm\content C:\inetpub\wwwroot
+
 # Copy solution website files
 COPY --from=solution \artifacts\website\ .\
 

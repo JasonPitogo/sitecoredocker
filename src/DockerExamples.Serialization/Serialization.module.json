@@ -1,0 +1,11 @@
+{
+  "namespace": "DockerExamples.Serialization",
+  "items": {
+    "includes": [
+      {
+        "name": "templates",
+        "path": "/sitecore/templates/TestSerialization"
+      }
+    ]
+  }
+}
